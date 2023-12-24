@@ -1,0 +1,132 @@
+/* =============== Navigation =============== */
+.nav-container-CSS {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #292929;
+}
+
+.nav-container-CSS.newYear {
+  background-color: #800020;
+}
+
+.nav-container-CSS.summer {
+  background-color: #0F2E56;
+}
+
+.nav-container-CSS.halloween {
+  background-color: #B94700;
+}
+
+.nav-container-CSS.christmas {
+  background-color: #27592D;
+}
+
+.nav-gif-CSS {
+  height: 200px;
+  width: 200px;
+}
+
+.nav-list-CSS {
+  margin: 0px;
+}
+
+.nav-h3-CSS {
+  position: relative;
+  margin: 0px 50px;
+}
+
+.nav-black-CSS {
+  color: #000000;
+}
+
+.nav-h3-CSS.nav-black-CSS::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #000000;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-h3-CSS.nav-black-CSS:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.nav-white-CSS {
+  color: #FFFFFF;
+}
+
+.nav-h3-CSS.nav-white-CSS::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-h3-CSS.nav-white-CSS:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+} 
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 767px) {
+  /* Navigation */
+  .nav-gif-CSS {
+    height: 150px;
+    width: 150px;
+  }
+
+  .nav-h3-CSS {
+    position: relative;
+    margin: 0px 0px 25px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 991px) {
+  /* Navigation */
+  .nav-h3-CSS {
+    position: relative;
+    margin: 0px 0px 25px;
+  }
+}
+
+
+
+@media only screen and (1000px <= width <= 1300px) {
+  /* Navigation */
+  .nav-h3-CSS {
+    position: relative;
+    margin: 0px 20px;
+  }
+}
+
+
+
+@media only screen and (1301px <= width <= 1910px) {
+  /* Navigation */
+  .nav-h3-CSS {
+    position: relative;
+    margin: 0px 25px;
+  }
+}
