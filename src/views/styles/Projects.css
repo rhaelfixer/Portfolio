@@ -1,0 +1,226 @@
+/* =============== Section =============== */
+.projects-CSS {
+  text-align: center;
+  margin: 350px;
+}
+
+.projects-card-CSS {
+  width: 100%;
+}
+
+.projects-h1-CSS {
+  margin: 50px 0px;
+}
+
+.projects-tab-CSS .nav-link {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.projects-tab-CSS .nav-link.active {
+  font-weight: bold;
+  border-bottom: solid 5px #FFFFFF;
+}
+
+.iframe-size-CSS {
+  height: 600px;
+  width: 500px;
+}
+
+.projects-icon-CSS {
+  font-size: 35px;
+  margin: 0px 50px;
+}
+
+.mern-society-cms-CSS {
+  height: 500px;
+  width: 500px;
+}
+
+.hover-gif-CSS {
+  height: 250px;
+  width: 250px;
+  margin-top: 355px;
+}
+
+.hover-mern-gif-CSS {
+  height: 250px;
+  width: 250px;
+  margin-top: 250px;
+}
+
+.hover-gif-CSS.show-CSS,
+.hover-mern-gif-CSS.show-CSS {
+  display: block;
+}
+
+.hover-gif-CSS.hide-CSS,
+.hover-mern-gif-CSS.hide-CSS {
+  display: none;
+}
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 425px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 350px 0px;
+  }
+
+  .projects-h1-CSS {
+    margin: 25px 0px;
+  }
+
+  .react-tic-tac-toe-CSS,
+  .react-chess-ai-CSS,
+  .mern-society-cms-CSS {
+    height: 250px;
+    width: 250px;
+  }
+
+  .projects-icon-CSS {
+    font-size: 25px;
+    margin: 0px 50px;
+  }
+}
+
+
+
+@media only screen and (426px <= width <= 767px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 350px 25px;
+  }
+
+  .projects-h1-CSS {
+    margin: 25px 0px;
+  }
+
+  .react-tic-tac-toe-CSS,
+  .react-chess-ai-CSS,
+  .mern-society-cms-CSS {
+    height: 350px;
+    width: 350px;
+  }
+
+  .projects-icon-CSS {
+    font-size: 25px;
+    margin: 0px 50px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 1023px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 350px 50px;
+  }
+
+  .projects-h1-CSS {
+    margin: 25px 0px;
+  }
+
+  .react-tic-tac-toe-CSS,
+  .react-chess-ai-CSS,
+  .mern-society-cms-CSS {
+    height: 500px;
+    width: 500px;
+  }
+
+  .projects-icon-CSS {
+    font-size: 25px;
+    margin: 0px 50px;
+  }
+}
+
+
+
+@media only screen and (1024px <= width <= 1120px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 350px 125px;
+  }
+
+  .projects-h1-CSS {
+    margin: 25px 0px;
+  }
+
+  .react-tic-tac-toe-CSS,
+  .react-chess-ai-CSS,
+  .mern-society-cms-CSS {
+    height: 500px;
+    width: 500px;
+  }
+
+  .projects-icon-CSS {
+    font-size: 25px;
+    margin: 0px 50px;
+  }
+}
+
+
+
+@media only screen and (1121px <= width <= 1499px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 275px;
+  }
+
+  .react-tic-tac-toe-CSS,
+  .react-chess-ai-CSS,
+  .mern-society-cms-CSS {
+    height: 500px;
+    width: 500px;
+  }
+
+  .projects-icon-CSS {
+    font-size: 25px;
+    margin: 0px 50px;
+  }
+}
+
+
+
+@media only screen and (1500px <= width <= 1910px) {
+  /* Section */
+  .projects-CSS {
+    text-align: center;
+    margin: 275px;
+  }
+
+  .iframe-size-CSS {
+    height: 600px;
+    width: 500px;
+  }
+
+  .mern-society-cms-CSS {
+    height: 400px;
+    width: 400px;
+    margin: 0px 250px;
+  }
+
+  .hover-gif-CSS {
+    height: 200px;
+    width: 200px;
+    margin: 405px 0px 0px -75px;
+  }
+
+  .hover-mern-gif-CSS {
+    height: 200px;
+    width: 200px;
+    margin-top: 200px;
+  }
+}
