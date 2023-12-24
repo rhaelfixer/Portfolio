@@ -1,0 +1,156 @@
+/* =============== Section =============== */
+.profile-CSS {
+  text-align: center;
+  margin: 250px;
+}
+
+.profile-name-CSS {
+  font-size: 75px;
+  color: #9598DA;
+}
+
+.profile-name-CSS.newYear {
+  color: #FAD02E;
+}
+
+.profile-name-CSS.summer {
+  color: #7DF9FF;
+}
+
+.profile-name-CSS.halloween {
+  color: #53D553;
+}
+
+.profile-name-CSS.christmas {
+  color: #F0E68C;
+}
+
+.typewriter-CSS {
+  font-size: 50px;
+  color: #71A1D0;
+}
+
+.typewriter-CSS.newYear {
+  color: #00CED1;
+}
+
+.typewriter-CSS.summer {
+  color: #98FB98;
+}
+
+.typewriter-CSS.halloween {
+  color: #E2B33C;
+}
+
+.typewriter-CSS.christmas {
+  color: #C5EDE9;
+}
+
+.profile-intro-CSS {
+  color: #CCCCCC;
+}
+
+.profile-intro-CSS.newYear { 
+  color: #ECECEC;
+}
+
+.profile-intro-CSS.summer {
+  color: #E5E5C7;
+}
+
+.profile-intro-CSS.halloween {
+  color: #BABADE;
+}
+
+.profile-intro-CSS.christmas {
+  color: #FFECC5;
+}
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 425px) {
+  /* Section */
+  .profile-CSS {
+    margin: 250px 0px;
+  }
+
+  .profile-name-CSS {
+    font-size: 50px;
+  }
+
+  .typewriter-CSS {
+    font-size: 30px;
+  }
+}
+
+
+
+@media only screen and (426px <= width <= 767px) {
+  /* Section */
+  .profile-CSS {
+    margin: 250px 25px;
+  }
+
+  .profile-name-CSS {
+    font-size: 50px;
+  }
+
+  .typewriter-CSS {
+    font-size: 30px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 1023px) {
+  /* Section */
+  .profile-CSS {
+    margin: 250px 50px;
+  }
+
+  .profile-name-CSS {
+    font-size: 75px;
+  }
+
+  .typewriter-CSS {
+    font-size: 50px;
+  }
+}
+
+
+
+@media only screen and (1024px <= width <= 1120px) {
+  /* Section */
+  .profile-CSS {
+    margin: 250px 125px;
+  }
+
+  .profile-name-CSS {
+    font-size: 75px;
+  }
+
+  .typewriter-CSS {
+    font-size: 50px;
+  }
+}
+
+
+
+@media only screen and (1121px <= width <= 1910px) {
+  /* Section */
+  .profile-CSS {
+    margin: 200px;
+  }
+
+  .profile-name-CSS {
+    font-size: 75px;
+  }
+
+  .typewriter-CSS {
+    font-size: 50px;
+  }
+}
