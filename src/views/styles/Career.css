@@ -1,0 +1,151 @@
+/* =============== Section =============== */
+.career-CSS {
+  text-align: center;
+  margin: 350px;
+}
+
+.career-outer-card-CSS {
+  background-color: #212529;
+  color: #FFFFFF;
+  padding: 50px 0px;
+}
+
+.career-h1-CSS {
+  margin: 0px 0px 50px;
+}
+
+.career-inner-card-CSS {
+  background-color: #2C3036;
+  color: #FFFFFF;
+  margin: 0px 50px;
+}
+
+.career-intro-CSS {
+  font-size: 20px;
+}
+
+.career-p-CSS {
+  font-size: 15px;
+}
+
+.career-span-CSS {
+  font-weight: bold;
+}
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 425px) {
+  /* Section */
+  .career-CSS {
+    text-align: center;
+    margin: 350px 0px;
+  }
+
+  .career-outer-card-CSS {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 25px 0px;
+  }
+
+  .career-h1-CSS {
+    margin: 0px 0px 25px;
+  }
+
+  .career-inner-card-CSS {
+    background-color: #2C3036;
+    color: #FFFFFF;
+    margin: 0px 5px;
+  }
+}
+
+
+
+@media only screen and (426px <= width <= 767px) {
+  /* Section */
+  .career-CSS {
+    text-align: center;
+    margin: 350px 25px;
+  }
+
+  .career-outer-card-CSS {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 25px 0px;
+  }
+
+  .career-h1-CSS {
+    margin: 0px 0px 25px;
+  }
+
+  .career-inner-card-CSS {
+    background-color: #2C3036;
+    color: #FFFFFF;
+    margin: 0px 5px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 1023px) {
+  /* Section */
+  .career-CSS {
+    text-align: center;
+    margin: 350px 50px;
+  }
+
+  .career-outer-card-CSS {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 25px 0px;
+  }
+
+  .career-h1-CSS {
+    margin: 0px 0px 25px;
+  }
+
+  .career-inner-card-CSS {
+    background-color: #2C3036;
+    color: #FFFFFF;
+    margin: 0px 5px;
+  }
+}
+
+
+
+@media only screen and (1024px <= width <= 1120px) {
+  /* Section */
+  .career-CSS {
+    text-align: center;
+    margin: 350px 125px;
+  }
+
+  .career-outer-card-CSS {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 25px 0px;
+  }
+
+  .career-h1-CSS {
+    margin: 0px 0px 25px;
+  }
+
+  .career-inner-card-CSS {
+    background-color: #2C3036;
+    color: #FFFFFF;
+    margin: 0px 25px;
+  }
+}
+
+
+
+@media only screen and (1121px <= width <= 1910px) {
+  /* Section */
+  .career-CSS {
+    text-align: center;
+    margin: 275px;
+  }
+}
