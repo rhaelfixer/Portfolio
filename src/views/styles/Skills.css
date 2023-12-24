@@ -1,0 +1,74 @@
+/* =============== Section =============== */
+.skills-CSS {
+  text-align: center;
+  margin: 350px;
+}
+
+.skills-h1-CSS {
+  margin: 50px 0px;
+}
+
+
+
+/* =============== Media Queries =============== */
+
+/* =============== Mobile View =============== */
+@media only screen and (250px <= width <= 425px) {
+  /* Section */
+  .skills-CSS {
+    margin: 350px 0px;
+  }
+
+  .skills-h1-CSS {
+    margin: 25px 0px;
+  }
+}
+
+
+
+@media only screen and (426px <= width <= 767px) {
+  /* Section */
+  .skills-CSS {
+    margin: 350px 25px;
+  }
+
+  .skills-h1-CSS {
+    margin: 25px 0px;
+  }
+}
+
+
+
+/* =============== Tablet View =============== */
+@media only screen and (768px <= width <= 1023px) {
+  /* Section */
+  .skills-CSS {
+    margin: 350px 50px;
+  }
+
+  .skills-h1-CSS {
+    margin: 25px 0px;
+  }
+}
+
+
+
+@media only screen and (1024px <= width <= 1120px) {
+  /* Section */
+  .skills-CSS {
+    margin: 350px 125px;
+  }
+
+  .skills-h1-CSS {
+    margin: 25px 0px;
+  }
+}
+
+
+
+@media only screen and (1121px <= width <= 1910px) {
+  /* Section */
+  .skills-CSS {
+    margin: 275px;
+  }
+}
