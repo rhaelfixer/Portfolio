@@ -21,7 +21,7 @@ function Career() {
                 Junior Node.js Developer
               </h2>
             </Card.Title>
-            <Card.Subtitle className="mb-3">Date: 03/04/2023 - Present</Card.Subtitle>
+            <Card.Subtitle className="mb-3">Date: 03/04/2023 - 23/02/2024</Card.Subtitle>
             <Card.Text className="career-intro-CSS">
               As a Junior Node.js Developer at FPLE SDN BHD, my role encompasses a range of responsibilities, including:
             </Card.Text>
