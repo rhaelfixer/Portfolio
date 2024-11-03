@@ -1,11 +1,11 @@
-import React, {useState, useEffect, useCallback, useMemo} from "react";
-import {Container, Nav, Navbar, Row, Col} from "react-bootstrap";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 
 
 // Context
-import {useDate} from "../components/DateContext";
-import {useScrolling, useScrollTo} from "../components/ScrollContext";
+import { useDate } from "../components/DateContext";
+import { useScrolling, useScrollTo } from "../components/ScrollContext";
 
 
 // CSS
@@ -20,37 +20,37 @@ const {
   Akino: {
     Idle: Default_Akino_Idle,
     Run: Default_Akino_Run,
-    Run_Super: Default_Akino_Run_Super
+    Run_Super: Default_Akino_Run_Super,
   },
   Hiyori: {
     Idle: Default_Hiyori_Idle,
     Run: Default_Hiyori_Run,
-    Run_Super: Default_Hiyori_Run_Super
+    Run_Super: Default_Hiyori_Run_Super,
   },
   Kaori: {
     Idle: Default_Kaori_Idle,
     Run: Default_Kaori_Run,
-    Run_Super: Default_Kaori_Run_Super
+    Run_Super: Default_Kaori_Run_Super,
   },
   Kasumi: {
     Idle: Default_Kasumi_Idle,
     Run: Default_Kasumi_Run,
-    Run_Super: Default_Kasumi_Run_Super
+    Run_Super: Default_Kasumi_Run_Super,
   },
   Nozomi: {
     Idle: Default_Nozomi_Idle,
     Run: Default_Nozomi_Run,
-    Run_Super: Default_Nozomi_Run_Super
+    Run_Super: Default_Nozomi_Run_Super,
   },
   Rei: {
     Idle: Default_Rei_Idle,
     Run: Default_Rei_Run,
-    Run_Super: Default_Rei_Run_Super
+    Run_Super: Default_Rei_Run_Super,
   },
   Suzuna: {
     Idle: Default_Suzuna_Idle,
     Run: Default_Suzuna_Run,
-    Run_Super: Default_Suzuna_Run_Super
+    Run_Super: Default_Suzuna_Run_Super,
   },
 } = Characters;
 
@@ -64,35 +64,37 @@ const {
   Summer_Akino: {
     Idle: Summer_Akino_Idle,
     Run: Summer_Akino_Run,
-    Run_Super: Summer_Akino_Run_Super
+    Run_Super: Summer_Akino_Run_Super,
   },
   Summer_Hiyori: {
     Idle: Summer_Hiyori_Idle,
     Run: Summer_Hiyori_Run,
-    Run_Super: Summer_Hiyori_Run_Super
+    Run_Super: Summer_Hiyori_Run_Super,
   },
   Summer_Kaori: {
     Idle: Summer_Kaori_Idle,
     Run: Summer_Kaori_Run,
-    Run_Super: Summer_Kaori_Run_Super
+    Run_Super: Summer_Kaori_Run_Super,
   },
   Summer_Kasumi: {
     Idle: Summer_Kasumi_Idle,
     Run: Summer_Kasumi_Run,
-    Run_Super: Summer_Kasumi_Run_Super
+    Run_Super: Summer_Kasumi_Run_Super,
   },
   Summer_Nozomi: {
     Idle: Summer_Nozomi_Idle,
     Run: Summer_Nozomi_Run,
-    Run_Super: Summer_Nozomi_Run_Super
+    Run_Super: Summer_Nozomi_Run_Super,
   },
   Summer_Rei: {
-    Idle: Summer_Rei_Idle,Run: Summer_Rei_Run,Run_Super: Summer_Rei_Run_Super
+    Idle: Summer_Rei_Idle,
+    Run: Summer_Rei_Run,
+    Run_Super: Summer_Rei_Run_Super,
   },
   Summer_Suzuna: {
     Idle: Summer_Suzuna_Idle,
     Run: Summer_Suzuna_Run,
-    Run_Super: Summer_Suzuna_Run_Super
+    Run_Super: Summer_Suzuna_Run_Super,
   },
 } = Characters;
 
@@ -108,7 +110,7 @@ const Christmas_Akino_Run_Super = Characters.Christmas_Akino.Run_Super;
 
 
 const Navigation = () => {
-  const {isNewYear, isSummer, isHalloween, isChristmas} = useDate();
+  const { isNewYear, isSummer, isHalloween, isChristmas } = useDate();
 
   const idleDefault = useMemo(
     () => [
@@ -188,7 +190,6 @@ const Navigation = () => {
     []
   );
 
-
   const randomDefaultIdle = () => {
     const randomIndex = Math.floor(Math.random() * idleDefault.length);
     return idleDefault[randomIndex];
@@ -200,15 +201,19 @@ const Navigation = () => {
   };
 
   const [displayedGif, setDisplayedGif] = useState(
-    isNewYear ? New_Year_Hiyori_Idle :
-      isSummer ? randomSummerIdle :
-        isHalloween ? Halloween_Kaori_Idle :
-          isChristmas ? Christmas_Akino_Idle :
-            randomDefaultIdle
+    isNewYear
+      ? New_Year_Hiyori_Idle
+      : isSummer
+      ? randomSummerIdle
+      : isHalloween
+      ? Halloween_Kaori_Idle
+      : isChristmas
+      ? Christmas_Akino_Idle
+      : randomDefaultIdle
   );
   const [lastIdleGif] = useState(displayedGif);
-  const {scrolling, setScrolling} = useScrolling();
-  const {scrollTo, setScrollTo} = useScrollTo();
+  const { scrolling, setScrolling } = useScrolling();
+  const { scrollTo, setScrollTo } = useScrollTo();
   const [textColor, setTextColor] = useState("");
 
 
@@ -261,7 +266,18 @@ const Navigation = () => {
         setDisplayedGif(lastIdleGif);
       }
     }
-  }, [scrolling, isNewYear, isSummer, isHalloween, isChristmas, idleDefault, idleSummer, runDefault, runSummer, lastIdleGif]);
+  }, [
+    scrolling,
+    isNewYear,
+    isSummer,
+    isHalloween,
+    isChristmas,
+    idleDefault,
+    idleSummer,
+    runDefault,
+    runSummer,
+    lastIdleGif,
+  ]);
 
 
   const scrollToStart = useCallback(() => {
@@ -279,7 +295,18 @@ const Navigation = () => {
     } else {
       setDisplayedGif(runSuperDefault[idleDefault.indexOf(lastIdleGif)]);
     }
-  }, [setScrollTo, isNewYear, isSummer, isHalloween, isChristmas, idleDefault, runSuperDefault, idleSummer, runSuperSummer, lastIdleGif]);
+  }, [
+    setScrollTo,
+    isNewYear,
+    isSummer,
+    isHalloween,
+    isChristmas,
+    idleDefault,
+    runSuperDefault,
+    idleSummer,
+    runSuperSummer,
+    lastIdleGif,
+  ]);
 
   const scrollToEnd = useCallback(() => {
     // Set scrollTo to false
@@ -302,7 +329,7 @@ const Navigation = () => {
   const handleScrollTo = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({behavior: "smooth", block: "center"});
+      section.scrollIntoView({ behavior: "smooth", block: "center" });
       scrollToStart();
       // Reset scrollTo after the specified duration
       setTimeout(() => {
@@ -333,7 +360,7 @@ const Navigation = () => {
         // Handle "End" key press
         // Check if the window is already scrolled to the bottom
         const isScrolledToBottom =
-          (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 2;
+          window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
         if (isScrolledToBottom) {
           // If already at the bottom, no need to scroll
           return;
@@ -369,9 +396,12 @@ const Navigation = () => {
     navigation += " christmas";
   }
 
+
   useEffect(() => {
     // Select the container element with the specified class
-    const containerElement = document.querySelector(`.${ navigation.replace(/\s/g, ".") }`);
+    const containerElement = document.querySelector(
+      `.${navigation.replace(/\s/g, ".")}`
+    );
 
     // Get the computed style of the container element
     const computedStyle = window.getComputedStyle(containerElement);
@@ -382,7 +412,9 @@ const Navigation = () => {
     // Convert RGB to hex format for easier manipulation
     function rgbToHex(rgb) {
       const [r, g, b] = rgb.match(/\d+/g);
-      return `#${ Number(r).toString(16).padStart(2, "0") }${ Number(g).toString(16).padStart(2, "0") }${ Number(b).toString(16).padStart(2, "0") }`;
+      return `#${Number(r).toString(16).padStart(2, "0")}${Number(g)
+        .toString(16)
+        .padStart(2, "0")}${Number(b).toString(16).padStart(2, "0")}`;
     }
 
     // Convert the background color to hex format
@@ -408,42 +440,44 @@ const Navigation = () => {
   return (
     <>
       <Container className={navigation} fluid>
-        <Navbar className="text-center" variant="dark" collapseOnSelect expand="lg">
+        <Navbar
+          className="text-center"
+          variant="dark"
+          collapseOnSelect
+          expand="lg"
+        >
           <Container>
             <Navbar.Brand>
               <Row>
                 <Col md={6}>
-                  <img className="nav-gif-CSS" src={displayedGif} alt="Nav Gif" />
+                  <img
+                    className="nav-gif-CSS"
+                    src={displayedGif}
+                    alt="Nav Gif"
+                  />
                 </Col>
               </Row>
             </Navbar.Brand>
-            <Navbar.Toggle className={`mx-auto nav-list-CSS ${ textColor }`} aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle
+              className={`mx-auto nav-list-CSS ${textColor}`}
+              aria-controls="responsive-navbar-nav"
+            />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mx-auto">
                 <Nav.Link onClick={() => handleScrollTo("skills")}>
-                  <h3 className={`nav-h3-CSS ${ textColor }`}>
-                    Skills
-                  </h3>
+                  <h3 className={`nav-h3-CSS ${textColor}`}>Skills</h3>
                 </Nav.Link>
                 <Nav.Link onClick={() => handleScrollTo("projects")}>
-                  <h3 className={`nav-h3-CSS ${ textColor }`}>
-                    Projects
-                  </h3>
+                  <h3 className={`nav-h3-CSS ${textColor}`}>Projects</h3>
                 </Nav.Link>
                 <Nav.Link onClick={() => handleScrollTo("career")}>
-                  <h3 className={`nav-h3-CSS ${ textColor }`}>
-                    Career
-                  </h3>
+                  <h3 className={`nav-h3-CSS ${textColor}`}>Career</h3>
                 </Nav.Link>
                 <Nav.Link onClick={() => handleScrollTo("education")}>
-                  <h3 className={`nav-h3-CSS ${ textColor }`}>
-                    Education
-                  </h3>
+                  <h3 className={`nav-h3-CSS ${textColor}`}>Education</h3>
                 </Nav.Link>
                 <Nav.Link onClick={() => handleScrollTo("contact")}>
-                  <h3 className={`nav-h3-CSS ${ textColor }`}>
-                    Contact
-                  </h3>
+                  <h3 className={`nav-h3-CSS ${textColor}`}>Contact</h3>
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
