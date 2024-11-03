@@ -6,10 +6,11 @@
 
 .projects-card-CSS {
   width: 100%;
+  padding: 50px 0px 0px;
 }
 
 .projects-h1-CSS {
-  margin: 50px 0px;
+  margin: 0px;
 }
 
 .projects-tab-CSS .nav-link {
@@ -25,9 +26,23 @@
   border-bottom: solid 5px #FFFFFF;
 }
 
-.iframe-size-CSS {
-  height: 600px;
+.iframe-1-size-CSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 75%;
+  margin: auto;
+}
+
+.iframe-2-size-CSS {
+  height: 575px;
   width: 500px;
+}
+
+.tech-icons-CSS {
+  font-weight: bold;
+  margin: 0px 15px;
 }
 
 .projects-icon-CSS {
@@ -40,28 +55,6 @@
   width: 500px;
 }
 
-.hover-gif-CSS {
-  height: 250px;
-  width: 250px;
-  margin-top: 355px;
-}
-
-.hover-mern-gif-CSS {
-  height: 250px;
-  width: 250px;
-  margin-top: 250px;
-}
-
-.hover-gif-CSS.show-CSS,
-.hover-mern-gif-CSS.show-CSS {
-  display: block;
-}
-
-.hover-gif-CSS.hide-CSS,
-.hover-mern-gif-CSS.hide-CSS {
-  display: none;
-}
-
 
 
 /* =============== Media Queries =============== */
@@ -72,10 +65,6 @@
   .projects-CSS {
     text-align: center;
     margin: 350px 0px;
-  }
-
-  .projects-h1-CSS {
-    margin: 25px 0px;
   }
 
   .react-tic-tac-toe-CSS,
@@ -98,10 +87,6 @@
   .projects-CSS {
     text-align: center;
     margin: 350px 25px;
-  }
-
-  .projects-h1-CSS {
-    margin: 25px 0px;
   }
 
   .react-tic-tac-toe-CSS,
@@ -127,10 +112,6 @@
     margin: 350px 50px;
   }
 
-  .projects-h1-CSS {
-    margin: 25px 0px;
-  }
-
   .react-tic-tac-toe-CSS,
   .react-chess-ai-CSS,
   .mern-society-cms-CSS {
@@ -151,10 +132,6 @@
   .projects-CSS {
     text-align: center;
     margin: 350px 125px;
-  }
-
-  .projects-h1-CSS {
-    margin: 25px 0px;
   }
 
   .react-tic-tac-toe-CSS,
@@ -210,17 +187,5 @@
     height: 400px;
     width: 400px;
     margin: 0px 250px;
-  }
-
-  .hover-gif-CSS {
-    height: 200px;
-    width: 200px;
-    margin: 405px 0px 0px -75px;
-  }
-
-  .hover-mern-gif-CSS {
-    height: 200px;
-    width: 200px;
-    margin-top: 200px;
   }
 }

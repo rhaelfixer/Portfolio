@@ -11,13 +11,26 @@
 }
 
 .career-h1-CSS {
-  margin: 0px 0px 50px;
+  margin: 0px;
+}
+
+.career-tab-CSS .nav-link {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.career-tab-CSS .nav-link.active {
+  font-weight: bold;
+  border-bottom: solid 5px #FFFFFF;
 }
 
 .career-inner-card-CSS {
   background-color: #2C3036;
   color: #FFFFFF;
-  margin: 0px 50px;
+  margin: 25px 50px 0px;
 }
 
 .career-intro-CSS {
@@ -50,14 +63,10 @@
     padding: 25px 0px;
   }
 
-  .career-h1-CSS {
-    margin: 0px 0px 25px;
-  }
-
   .career-inner-card-CSS {
     background-color: #2C3036;
     color: #FFFFFF;
-    margin: 0px 5px;
+    margin: 25px 5px 0px;
   }
 }
 
@@ -76,14 +85,10 @@
     padding: 25px 0px;
   }
 
-  .career-h1-CSS {
-    margin: 0px 0px 25px;
-  }
-
   .career-inner-card-CSS {
     background-color: #2C3036;
     color: #FFFFFF;
-    margin: 0px 5px;
+    margin: 25px 5px 0px;
   }
 }
 
@@ -103,14 +108,10 @@
     padding: 25px 0px;
   }
 
-  .career-h1-CSS {
-    margin: 0px 0px 25px;
-  }
-
   .career-inner-card-CSS {
     background-color: #2C3036;
     color: #FFFFFF;
-    margin: 0px 5px;
+    margin: 25px 25px 0px;
   }
 }
 
@@ -129,14 +130,10 @@
     padding: 25px 0px;
   }
 
-  .career-h1-CSS {
-    margin: 0px 0px 25px;
-  }
-
   .career-inner-card-CSS {
     background-color: #2C3036;
     color: #FFFFFF;
-    margin: 0px 25px;
+    margin: 25px 25px 0px;
   }
 }
 

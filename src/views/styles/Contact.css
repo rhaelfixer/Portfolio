@@ -11,7 +11,7 @@
 }
 
 .contact-h1-CSS {
-  margin: 0px 0px 50px;
+  margin: 0px 0px 25px;
 }
 
 .contact-inner-card-CSS {
@@ -37,10 +37,6 @@
   margin: 25px 25px 0px;
 }
 
-.resume-download-CSS {
-  margin: 0px 25px 25px;
-}
-
 .contact-gif-CSS.reverse {
   transform: scaleX(-1);
 }
@@ -64,7 +60,7 @@
   }
 
   .contact-h1-CSS {
-    margin: 0px 0px 25px;
+    margin: 0px 0px 15px;
   }
 
   .contact-inner-card-CSS {
@@ -98,7 +94,7 @@
   }
 
   .contact-h1-CSS {
-    margin: 0px 0px 25px;
+    margin: 0px 0px 15px;
   }
 
   .contact-inner-card-CSS {
@@ -133,13 +129,13 @@
   }
 
   .contact-h1-CSS {
-    margin: 0px 0px 25px;
+    margin: 0px 0px 15px;
   }
 
   .contact-inner-card-CSS {
     background-color: #2C3036;
     color: #FFFFFF;
-    margin: 0px 5px;
+    margin: 0px 25px;
   }
 }
 
@@ -159,7 +155,7 @@
   }
 
   .contact-h1-CSS {
-    margin: 0px 0px 25px;
+    margin: 0px 0px 15px;
   }
 
   .contact-inner-card-CSS {
