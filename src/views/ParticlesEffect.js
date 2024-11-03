@@ -1,10 +1,10 @@
-import React, {useCallback} from "react";
+import React, { useCallback } from "react";
 import Particles from "react-particles";
-import {loadFull} from "tsparticles";
+import { loadFull } from "tsparticles";
 
 
 // Context
-import {useDate} from "../components/DateContext";
+import { useDate } from "../components/DateContext";
 
 
 // CSS
@@ -12,10 +12,9 @@ import "./styles/ParticlesEffect.css";
 
 
 const ParticlesEffect = () => {
-  const {isNewYear, isSummer, isHalloween, isChristmas} = useDate();
+  const { isNewYear, isSummer, isHalloween, isChristmas } = useDate();
 
-
-  const particlesInit = useCallback(async engine => {
+  const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
 
@@ -61,10 +60,6 @@ const ParticlesEffect = () => {
             fpsLimit: 120,
             interactivity: {
               events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
                 onHover: {
                   enable: true,
                   mode: "grab",
@@ -72,15 +67,12 @@ const ParticlesEffect = () => {
                 resize: true,
               },
               modes: {
-                push: {
-                  quantity: 5,
-                },
                 grab: {
                   distance: 350,
                   links: {
                     opacity: 0.5,
                   },
-                }
+                },
               },
             },
             particles: {
@@ -88,10 +80,10 @@ const ParticlesEffect = () => {
                 value: particlesColor,
               },
               number: {
-                value: 90,
+                value: 25,
                 density: {
                   enable: true,
-                  area: 900,
+                  area: 1000,
                 },
               },
               shape: {
@@ -103,7 +95,7 @@ const ParticlesEffect = () => {
               size: {
                 value: {
                   min: 1,
-                  max: 5
+                  max: 5,
                 },
               },
               links: {
