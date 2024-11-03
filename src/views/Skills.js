@@ -1,6 +1,6 @@
 import React from "react";
-import {Card} from "react-bootstrap";
-import {Cloud, renderSimpleIcon} from "react-icon-cloud";
+import { Card } from "react-bootstrap";
+import { Cloud, renderSimpleIcon } from "react-icon-cloud";
 import * as icons from "simple-icons";
 
 
@@ -15,8 +15,8 @@ const Skills = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "100%",
-        paddingTop: 40,
+        width: "50%",
+        margin: "auto",
       },
     },
     options: {
@@ -52,13 +52,14 @@ const Skills = () => {
     "github",
     "vercel",
     "render",
+    "astro",
     "visualstudiocode",
     "nodemon",
-    "docker"
+    "docker",
   ];
 
   const iconElements = iconSlugs.map((slug) => {
-    const icon = icons[`si${ slug.charAt(0).toUpperCase() + slug.slice(1) }`];
+    const icon = icons[`si${slug.charAt(0).toUpperCase() + slug.slice(1)}`];
 
     if (icon) {
       return renderSimpleIcon({
@@ -82,7 +83,11 @@ const Skills = () => {
             <Card.Title>
               <h1 className="skills-h1-CSS">Skills</h1>
             </Card.Title>
-            <Cloud className="skills-icon-CSS" containerProps={cloud.container} options={cloud.options}>
+            <Cloud
+              className="skills-icon-CSS"
+              containerProps={cloud.container}
+              options={cloud.options}
+            >
               {iconElements}
             </Cloud>
           </Card.Body>
