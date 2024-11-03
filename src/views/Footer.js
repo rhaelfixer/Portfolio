@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.css";
 
 
 // Context
-import {useDate} from "../components/DateContext";
+import { useDate } from "../components/DateContext";
 
 
 // CSS
@@ -12,9 +12,8 @@ import "./styles/Footer.css";
 
 
 const Footer = () => {
-  const {isNewYear, isSummer, isHalloween, isChristmas} = useDate();
+  const { isNewYear, isSummer, isHalloween, isChristmas } = useDate();
   const [textColor, setTextColor] = useState("");
-
 
   // Define the container class based on your conditions
   let footer = "footer-container-CSS";
@@ -28,9 +27,12 @@ const Footer = () => {
     footer += " christmas";
   }
 
+
   useEffect(() => {
     // Select the container element with the specified class
-    const containerElement = document.querySelector(`.${ footer.replace(/\s/g, ".") }`);
+    const containerElement = document.querySelector(
+      `.${footer.replace(/\s/g, ".")}`
+    );
 
     // Get the computed style of the container element
     const computedStyle = window.getComputedStyle(containerElement);
@@ -41,7 +43,9 @@ const Footer = () => {
     // Convert RGB to hex format for easier manipulation
     function rgbToHex(rgb) {
       const [r, g, b] = rgb.match(/\d+/g);
-      return `#${ Number(r).toString(16).padStart(2, "0") }${ Number(g).toString(16).padStart(2, "0") }${ Number(b).toString(16).padStart(2, "0") }`;
+      return `#${Number(r).toString(16).padStart(2, "0")}${Number(g)
+        .toString(16)
+        .padStart(2, "0")}${Number(b).toString(16).padStart(2, "0")}`;
     }
 
     // Convert the background color to hex format
@@ -57,7 +61,8 @@ const Footer = () => {
 
     // Determine the text color on luminance
     // In this case, if luminance is greater than 0.5, set to "footer-black-CSS", otherwise set to "footer-white-CSS"
-    const newTextColor = luminance > 0.5 ? "footer-black-CSS" : "footer-white-CSS";
+    const newTextColor =
+      luminance > 0.5 ? "footer-black-CSS" : "footer-white-CSS";
 
     // Set the text color based on the luminance
     setTextColor(newTextColor);
@@ -67,8 +72,9 @@ const Footer = () => {
   return (
     <>
       <Container className={footer} fluid>
-        <p className={`footer-p-CSS ${ textColor }`}>
-          Copyright &#169; {new Date().getFullYear()} Rhael Fixer. All rights reserved.
+        <p className={`footer-p-CSS ${textColor}`}>
+          Copyright &#169; {new Date().getFullYear()} Rhael Fixer. All rights
+          reserved.
         </p>
       </Container>
     </>
