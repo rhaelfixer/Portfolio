@@ -1,4 +1,9 @@
-export const Scrollbar = ({isNewYear, isSummer, isHalloween, isChristmas}) => {
+export const Scrollbar = ({
+  isNewYear,
+  isSummer,
+  isHalloween,
+  isChristmas,
+}) => {
   // Check if it is WebKit (Chrome, Safari, Edge)
   const isWebkit = "WebkitAppearance" in document.documentElement.style;
 
@@ -7,7 +12,7 @@ export const Scrollbar = ({isNewYear, isSummer, isHalloween, isChristmas}) => {
 
   const scrollbar = document.documentElement.style;
 
-  // Double check theme color
+
   if (isWebkit) {
     if (isNewYear) {
       scrollbar.setProperty("--scrollbar-thumb-color", "#FFD700");
