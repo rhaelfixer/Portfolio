@@ -80,9 +80,14 @@ const Projects = () => {
                     title="React Tic Tac Toe"
                   ></iframe>
                 )}
-                <Card.Text>
-                  React Tic Tac Toe project, where players can participate in
-                  matches.
+                <Card.Text className="project-description-CSS">
+                  A two-player browser-based game built with React that delivers
+                  a fun and competitive experience. While not networked
+                  multiplayer, it allows Player 1 and Player 2 to take turns on
+                  the same device in classic Tic Tac Toe matches. The game
+                  includes player name customization, new game initialization,
+                  match reset functionality, and a fully responsive design,
+                  ensuring a smooth experience across all devices.
                 </Card.Text>
                 <Card.Text>
                   <span className="tech-icons-CSS">Tech:</span>
@@ -137,9 +142,12 @@ const Projects = () => {
                     </Col>
                   </Row>
                 )}
-                <Card.Text>
-                  React Chess project, where player can play with AI MiniMax
-                  algorithm.
+                <Card.Text className="project-description-CSS">
+                  A single-player browser-based chess game built with React,
+                  featuring an AI opponent powered by the MiniMax algorithm with
+                  Alpha-Beta pruning for efficient move evaluation. The game
+                  includes match reset functionality and a fully responsive
+                  design, ensuring a smooth experience across all devices.
                 </Card.Text>
                 <Card.Text>
                   <span className="tech-icons-CSS">Tech:</span>
@@ -194,11 +202,16 @@ const Projects = () => {
                     </Col>
                   </Row>
                 )}
-                <Card.Text>
-                  My personal MERN stack project: a website empowering admins to
-                  effortlessly manage events, news, and affiliates through
-                  seamless CRUD operations. Registered users receive Mailchimp
-                  notifications, ensuring engagement with updates.
+                <Card.Text className="project-description-CSS">
+                  A full-stack content management system built with MongoDB,
+                  Express, React, and Node.js (MERN), designed for efficient
+                  administration of events, news, and affiliates. The platform
+                  includes secure user role management, rich media support, and
+                  Mailchimp integration for opt-in email updates. Administrators
+                  can manage content through intuitive CRUD interfaces, while
+                  registered users have secure access to platform features,
+                  update notifications, and a fully responsive design, ensuring
+                  a smooth experience across all devices.
                 </Card.Text>
                 <Card.Text>
                   <span className="tech-icons-CSS">Tech:</span>

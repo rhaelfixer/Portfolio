@@ -40,6 +40,12 @@
   width: 500px;
 }
 
+.project-description-CSS {
+  text-align: left;
+  width: 75%;
+  margin: 15px auto;
+}
+
 .tech-icons-CSS {
   font-weight: bold;
   margin: 0px 15px;
