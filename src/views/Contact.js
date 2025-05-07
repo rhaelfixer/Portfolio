@@ -224,7 +224,7 @@ function Contact() {
                   <Col>
                     <h3>
                       <a
-                        href="https://www.linkedin.com/in/rhaelfixer/"
+                        href="https://www.linkedin.com/in/jimmy-lim-sze-hong/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
