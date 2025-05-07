@@ -81,7 +81,7 @@ const Profile = () => {
             </h2>
             {initialScroll && (
               <h2
-                className={`animate__animated animate__fadeOut profile-intro-CSS ${profileIntroColor}`}
+                className={`animate__animated animate__fadeOut text-start profile-intro-CSS ${profileIntroColor}`}
               >
                 I am a ReactJS developer with strong familiarity with front-end
                 technologies. My expertise lies in designing visually appealing
@@ -117,7 +117,7 @@ const Profile = () => {
             </h2>
             {!initialScroll && (
               <h2
-                className={`animate__animated animate__fadeIn profile-intro-CSS ${profileIntroColor}`}
+                className={`animate__animated animate__fadeIn text-start profile-intro-CSS ${profileIntroColor}`}
               >
                 I am a ReactJS developer with strong familiarity with front-end
                 technologies. My expertise lies in designing visually appealing
