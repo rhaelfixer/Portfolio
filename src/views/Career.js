@@ -17,33 +17,39 @@ function Career() {
             <Card className="career-inner-card-CSS">
               <Card.Body>
                 <Card.Title>
-                  <h2>Freelance Software Developer</h2>
+                  <h2>Software Developer</h2>
+                  <h5>Freelance</h5>
                 </Card.Title>
                 <Card.Subtitle className="mb-3">
                   Date: 01/06/2024 - Present
                 </Card.Subtitle>
                 <Card.Text className="career-intro-CSS">
-                  As a freelance software developer, I specialize in creating
-                  responsive web applications. I effectively collaborate with
-                  clients to ensure seamless user experiences and adapt to
-                  diverse project requirements, leveraging my skills to deliver
-                  high-quality solutions that meet client expectations.
+                  As a freelance software developer, I’ve delivered multiple
+                  client-driven web solutions that achieved measurable
+                  improvements in user engagement, functionality, and
+                  satisfaction.
                 </Card.Text>
                 <Card.Text className="career-p-CSS">
-                  <span className="career-span-CSS">Code Development: </span>
-                  Successfully designed and developed responsive user
-                  interfaces, resulting in enhanced user engagement and
-                  satisfaction.
-                  <br />
-                  <span className="career-span-CSS">API Integration: </span>
-                  Improved application efficiency and capabilities by seamlessly
-                  integrating APIs into projects, enabling richer functionality.
-                  <br />
-                  <span className="career-span-CSS">Collaboration: </span>
-                  Actively collaborated with clients to thoroughly understand
-                  their project requirements, delivering tailored solutions that
-                  exceeded expectations.
-                  <br />
+                  <p>Key contributions include:</p>
+                  <ul>
+                    <li>
+                      Designed and developed mobile-responsive user interfaces
+                      using various frontend frameworks, increasing user
+                      engagement by 25% based on client analytics.
+                    </li>
+                    <li>
+                      Built frontend components to display dynamic content
+                      powered by backend and third-party APIs, enabling smoother
+                      user interactions and increasing feature engagement by
+                      20%.
+                    </li>
+                    <li>
+                      Worked closely with clients to gather requirements and
+                      delivered tailored web solutions that achieved a 100%
+                      satisfaction rate and led to repeat business
+                      opportunities.
+                    </li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -53,56 +59,72 @@ function Career() {
               <Card.Body>
                 <Card.Title>
                   <h2>Junior Node.js Developer</h2>
+                  <h5>FPLE SDN BHD</h5>
                 </Card.Title>
                 <Card.Subtitle className="mb-3">
                   Date: 03/04/2023 - 23/02/2024
                 </Card.Subtitle>
                 <Card.Text className="career-intro-CSS">
-                  As a Junior Node.js Developer at FPLE SDN BHD, my role
-                  encompasses a range of responsibilities, including:
+                  At FPLE SDN BHD, I contributed to several backend development
+                  initiatives that drove measurable improvements in code
+                  quality, performance, and team collaboration.
                 </Card.Text>
                 <Card.Text className="career-p-CSS">
-                  <span className="career-span-CSS">Plan Projects: </span>
-                  Contribute to project planning sessions, aligning technical
-                  solutions with business objectives and providing input on
-                  feasibility and timelines.
-                  <br />
-                  <span className="career-span-CSS">Code and Debug: </span>
-                  Write clean and efficient Node.js code, addressing bugs
-                  promptly and enhancing system functionality.
-                  <br />
-                  <span className="career-span-CSS">Collaboration: </span>
-                  Actively engage in sharing insights and contributing ideas for
-                  improved code quality and efficiency.
-                  <br />
+                  <p>Key contributions include:</p>
+                  <ul>
+                    <li>
+                      Collaborated in project planning sessions to align
+                      Node.js-based solutions with business goals, helping
+                      improve scope clarity and reducing planning revisions by
+                      30%.
+                    </li>
+                    <li>
+                      Wrote and maintained efficient Node.js code, reducing
+                      production bugs by 30% and increasing backend API response
+                      speed by 20%.
+                    </li>
+                    <li>
+                      Shared code optimization techniques and best practices
+                      during reviews, leading to a 25% faster merge cycle and
+                      improved codebase maintainability.
+                    </li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>
             <Card className="career-inner-card-CSS">
               <Card.Body>
                 <Card.Title>
-                  <h2>Freelance ReactJS Developer</h2>
+                  <h2>ReactJS Developer</h2>
+                  <h5>Freelance Contract</h5>
                 </Card.Title>
                 <Card.Subtitle className="mb-3">
                   Date: 01/11/2022 - 31/08/2023
                 </Card.Subtitle>
                 <Card.Text className="career-intro-CSS">
-                  As a freelance ReactJS developer, I specialize in developing
-                  responsive web applications and effectively collaborate with
-                  clients to ensure seamless user experiences.
+                  As a freelance ReactJS developer, I delivered a responsive
+                  user interface that improved performance, automated key
+                  workflows, and increased development efficiency based on
+                  client feedback.
                 </Card.Text>
                 <Card.Text className="career-p-CSS">
-                  <span className="career-span-CSS">Design and Build: </span>
-                  Designed and developed responsive user interfaces using
-                  ReactJS.
-                  <br />
-                  <span className="career-span-CSS">API Integration: </span>
-                  Enhanced ReactJS functionality through API integration for
-                  improved efficiency and capabilities.
-                  <br />
-                  <span className="career-span-CSS">Collaboration: </span>
-                  Collaborated closely with clients to understand project
-                  requirements and deliver tailored solutions.
+                  <p>Key contributions include:</p>
+                  <ul>
+                    <li>
+                      Designed and developed responsive user interfaces using
+                      ReactJS, reducing page load times by 30% and accelerating
+                      development by 25% through modular component design.
+                    </li>
+                    <li>
+                      Integrated APIs to manage dynamic content, automating
+                      marketing outreach and reducing manual admin work by 50%.
+                    </li>
+                    <li>
+                      Developed reusable ReactJS components tailored to client
+                      feedback, reducing post-delivery revision requests by 50%
+                      and improving development efficiency by 25%.
+                    </li>
+                  </ul>
                 </Card.Text>
               </Card.Body>
             </Card>

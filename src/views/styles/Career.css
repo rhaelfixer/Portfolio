@@ -35,14 +35,16 @@
 
 .career-intro-CSS {
   font-size: 20px;
+  text-align: left;
+  width: 75%;
+  margin: 0px auto;
 }
 
 .career-p-CSS {
   font-size: 15px;
-}
-
-.career-span-CSS {
-  font-weight: bold;
+  text-align: left;
+  width: 75%;
+  margin: 0px auto;
 }
 
 
